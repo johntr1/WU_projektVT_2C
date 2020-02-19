@@ -1,0 +1,45 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+nav {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 10vh;
+    background-color: violet;
+}
+
+.burgerIcon {
+    margin-right: 25px;
+    cursor: pointer;
+}
+
+.navLinks {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    position: absolute;
+    right: 0px;
+    height: 90vh;
+    top: -90vh;
+    background-color: violet;
+    align-items: center;
+    width: 20%;
+    transition: all 2s;
+}
+
+.burgerIcon div {
+    width: 35px;
+    height: 4px;
+    background-color: pink;
+    margin: 5px;
+    border-radius: 10%;
+    transition: all 1s;
+}
+
+.toggle .line1 {
+    
+}
