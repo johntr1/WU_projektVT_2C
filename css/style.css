@@ -2,6 +2,7 @@
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
+    font-size: 16px;
 }
 
 nav {
@@ -11,35 +12,65 @@ nav {
     height: 10vh;
     background-color: violet;
 }
-
-.burgerIcon {
-    margin-right: 25px;
-    cursor: pointer;
-}
-
 .navLinks {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     position: absolute;
-    right: 0px;
     height: 90vh;
     top: -90vh;
+    right: 0px;
     background-color: violet;
     align-items: center;
-    width: 20%;
-    transition: all 2s;
-}
-
-.burgerIcon div {
-    width: 35px;
-    height: 4px;
-    background-color: pink;
-    margin: 5px;
-    border-radius: 10%;
+    width: 50vw;
     transition: all 1s;
 }
 
-.toggle .line1 {
-    
+.navLinks a {
+    color: white;
+    text-decoration: none;
+    letter-spacing: 4px;
+    font-weight: bold;
+    font-size: 20px;
 }
+
+.navActive {
+    transform: translateY(100vh);
+}
+
+.gridWrapper {
+    display: grid;
+    height: 100vh;
+    grid-template-areas:
+    "hed nav"
+    "sec sec"
+    "art art"
+    "fot fot";
+    grid-template-columns: 80% 20%;
+    grid-template-rows: 10vh 40vh 40vh 10vh;
+}
+
+.mainHead {
+    grid-area: hed;
+    background: violet;
+}
+
+nav {
+    grid-area: nav;
+}
+
+.mainSection {
+    grid-area: sec;
+    background: yellow;
+}
+
+.mainArticle {
+    grid-area: art;
+    background: blue;
+}
+
+footer {
+    grid-area: fot;
+    background: green;
+}
+
