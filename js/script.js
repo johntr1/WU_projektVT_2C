@@ -7,3 +7,5 @@ function toggleMeny() {
 }
 
 hamburger.addEventListener('click', toggleMeny)
+
+smoothScroll.init();

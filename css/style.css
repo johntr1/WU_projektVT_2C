@@ -5,22 +5,27 @@
     box-sizing: border-box;
     font-size: 16px;
 }
-body {
-    background-image: url(https://img.emg-services.net/educations/education857077/nti-teknikprogrammet-2.jpg);
+
+html {
+    scroll-behavior: smooth;
 }
+
+
 nav {
     display: flex;
     justify-content: flex-end;
     align-items: center;
     height: 10vh;
+    position: fixed;
+    right: 0px;
 }
 .navLinks {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     position: absolute;
-    height: 90vh;
-    top: -90vh;
+    height: 100vh;
+    top: -100vh;
     right: 0px;
     background: violet;
     align-items: center;
@@ -41,6 +46,7 @@ nav {
 }
 
 .gridWrapper {
+    background-image: url(https://img.emg-services.net/educations/education857077/nti-teknikprogrammet-2.jpg);
     display: grid;
     height: 100vh;
     grid-template-areas:
@@ -52,13 +58,15 @@ nav {
     grid-template-rows: 10vh 40vh 40vh 10vh;
 }
 
-.mainHead {
+.gridTitle {
     grid-area: hed;
+}
+
+.title {
     font-size: 32px;
     display: flex;
     align-items: center;
     color: white;
-
 }
 
 nav {
@@ -83,57 +91,89 @@ nav {
     background: blue;
 }
 
-footer {
+.arrow {
+    box-sizing: border-box;
+    height: 10vw;
+    width: 10vw;
+    margin-bottom: 4vh;
+    border-style: solid;
+    border-color: white;
+    border-width: 0px 1px 1px 0px;
+    transform: rotate(45deg);
+    transition: border-width 150ms ease-in-out;
+
+  }
+  
+  .arrow:hover {
+    border-bottom-width: 4px;
+    border-right-width: 4px;
+  }
+
+  
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #0e242d;
+    height: 10vh;
+}
+
+.mainFoot {
     grid-area: fot;
 }
 
-.arrow {
-    opacity: 0;
-    position: absolute;
-        left: 50%;
-        top: 50%;
-    transform-origin: 50% 50%;
-    transform: translate3d(-50%, -50%, 0);
+#gridWrapper2 {
+    background-image: url(https://img.emg-services.net/educations/education857077/nti-teknikprogrammet-2.jpg);
+    height: 100vh;
+    display: grid;
+    grid-template-areas:
+    "hed nav"
+    "sec sec"
+    "rub rub"
+    "art art"
+    "fot fot"
+    ;
+    grid-template-columns: 80% 20%;
+    grid-template-rows: 10vh 30vh 15vh 35vh 10vh;
 }
 
-.arrow-first {
-    animation: arrow-movement 2s ease-in-out infinite;
-}
-.arrow-second {
-    animation: arrow-movement 2s 1s ease-in-out infinite;
+.gridTitle2 {
+    grid-area: hed;
 }
 
-.arrow:before,
-.arrow:after {
-    background: #fff;
-    content: '';
-    display: block;
-    height: 3px; 
-    position: absolute;
-        top: 0;
-        left: 0;
-    width: 30px;
+.gridRubrik {
+    grid-area: rub;
 }
 
-.arrow:before {
-    transform: rotate(45deg) translateX(-23%);
-    transform-origin: top left;
+.secondSection {
+    grid-area: sec;
+    background-color: blue;
 }
 
-.arrow:after {
-    transform: rotate(-45deg) translateX(23%);
-    transform-origin: top right;
+.secondArticle {
+    grid-area: art;
+
 }
 
-@keyframes arrow-movement {
-    0% { 
-        opacity: 0;
-        top: 45%;
-    }
-    70% {
-        opacity: 1;
-    }
-    100% { 
-        opacity: 0;
-    }
+.secondFoot {
+    grid-area: fot;
+}
+
+.rubrik {
+    background-color: rgb(247, 233, 252);
+    display: flex;
+    font-size: 32px;
+    color: #0e242d;
+    align-items: center;
+    text-align: center;
+    font-weight: 700;
+}
+
+article {
+    font-size: 16px;
+    display: flex;
+    color: #0e242d;
+    text-align: center;
+    background-color: rgb(247, 233, 252);
+
 }
