@@ -10,6 +10,10 @@ html {
     scroll-behavior: smooth;
 }
 
+body {
+    font-family: 'Oxanium', cursive;
+}
+
 
 nav {
     display: flex;
@@ -18,7 +22,16 @@ nav {
     height: 10vh;
     position: fixed;
     right: 0px;
+    background-color: rgb(2, 2, 82);
+    width: 100vw;
 }
+
+.gridTitle1 {
+    position: absolute;
+    left: 10px;
+    
+}
+
 .navLinks {
     display: flex;
     flex-direction: column;
@@ -27,7 +40,7 @@ nav {
     height: 100vh;
     top: -100vh;
     right: 0px;
-    background: violet;
+    background: rgb(2, 2, 82);
     align-items: center;
     width: 50vw;
     transition: all 1s;
@@ -46,21 +59,19 @@ nav {
 }
 
 .gridWrapper {
-    background-image: url(https://img.emg-services.net/educations/education857077/nti-teknikprogrammet-2.jpg);
+    background-image: url(https://image.freepik.com/free-vector/mobile-background-with-starry-sky-purple-tones_79603-550.jpg);
+    background-size: cover;
     display: grid;
     height: 100vh;
     grid-template-areas:
-    "hed nav"
+    "nav1 nav1"
     "sec sec"
-    "art art"
     "fot fot";
     grid-template-columns: 80% 20%;
-    grid-template-rows: 10vh 40vh 40vh 10vh;
+    grid-template-rows: 10vh 80vh 10vh;
 }
 
-.gridTitle {
-    grid-area: hed;
-}
+
 
 .title {
     font-size: 32px;
@@ -70,7 +81,7 @@ nav {
 }
 
 nav {
-    grid-area: nav;
+    grid-area: nav1;
 }
 
 .mainSection {
@@ -88,7 +99,7 @@ nav {
 
 .mainArticle {
     grid-area: art;
-    background: blue;
+    background-color: rgb(247, 233, 252);;
 }
 
 .arrow {
@@ -114,7 +125,7 @@ nav {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #0e242d;
+    background-color: rgb(2, 2, 82);
     height: 10vh;
 }
 
@@ -127,7 +138,7 @@ nav {
     height: 100vh;
     display: grid;
     grid-template-areas:
-    "hed nav"
+    "div div"
     "sec sec"
     "rub rub"
     "art art"
@@ -135,6 +146,13 @@ nav {
     ;
     grid-template-columns: 80% 20%;
     grid-template-rows: 10vh 30vh 15vh 35vh 10vh;
+}
+
+.plcdiv {
+    grid-area: div;
+    height:100vh;
+    width: auto;
+    background-color: rgb(2, 2, 82)
 }
 
 .gridTitle2 {
@@ -145,17 +163,17 @@ nav {
     grid-area: rub;
 }
 
-.secondSection {
+.subSection {
     grid-area: sec;
     background-color: blue;
 }
 
-.secondArticle {
+.subArticle {
     grid-area: art;
 
 }
 
-.secondFoot {
+.subFoot {
     grid-area: fot;
 }
 
@@ -174,6 +192,11 @@ article {
     display: flex;
     color: #0e242d;
     text-align: center;
-    background-color: rgb(247, 233, 252);
+    background-color: rgb(235, 233, 252);
 
+}
+
+.makerImg {
+    width:375px;
+    height: 100%;
 }
