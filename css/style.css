@@ -93,9 +93,6 @@ nav {
     text-align: center;
 }
 
-.mainSection img {
-    width: 100%
-}
 
 .mainArticle {
     grid-area: art;
@@ -134,8 +131,8 @@ nav {
 }
 
 #gridWrapper2 {
-    background-image: url(https://img.emg-services.net/educations/education857077/nti-teknikprogrammet-2.jpg);
     height: 100vh;
+    width: 100vw;
     display: grid;
     grid-template-areas:
     "div div"
@@ -150,7 +147,7 @@ nav {
 
 .plcdiv {
     grid-area: div;
-    height:100vh;
+    height:10vh;
     width: auto;
     background-color: rgb(2, 2, 82)
 }
@@ -165,7 +162,6 @@ nav {
 
 .subSection {
     grid-area: sec;
-    background-color: blue;
 }
 
 .subArticle {
@@ -185,18 +181,122 @@ nav {
     align-items: center;
     text-align: center;
     font-weight: 700;
+    border-bottom: 2px dotted currentColor;
 }
 
 article {
-    font-size: 16px;
     display: flex;
-    color: #0e242d;
     text-align: center;
     background-color: rgb(235, 233, 252);
+}
 
+p {
+    color: #0e242d;
+    font-size: 16px;
+    margin-top: 10px;
 }
 
 .makerImg {
     width:375px;
     height: 100%;
 }
+
+#bokWrapper {
+    background-color: rgb(235, 233, 252);
+    display: grid;
+    height: 100vh;
+    width: 100vw;
+    grid-template-areas:
+    "plc"
+    "rub"
+    "sec"
+    "fot"
+    ;
+
+    grid-template-rows: 10vh 15vh 65vh 10vh;
+}
+
+.bokRubrik {
+    grid-area: rub;
+}
+
+.blockSection {
+    grid-area: sec;
+    display: grid;
+    height: 65vh;
+    color: blue;
+    grid-template-areas:
+    "bo1 bo2"
+    "bo3 bo4"
+    "bo5 bo6"
+    ;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+
+.blocks {
+    border-radius: 10px;
+    margin: 10px;
+    box-shadow: 0px 0px 10px 0px ;
+    background-color: rgb(4, 4, 153);
+}
+
+.blockLink {
+    display: flex;
+    font-size: 20px;
+    color: white;
+    font-weight: bold;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    top: 35%;
+
+}
+
+.block1 {
+    grid-area: bo1;
+}
+
+.block2 {
+    grid-area: bo2;
+}
+
+.block3 {
+    grid-area: bo3;
+}
+
+.block4 {
+    grid-area: bo4;
+}
+
+.block5 {
+    grid-area: bo5;
+}
+
+.block6 {
+    grid-area: bo6;
+}
+
+.plcgrid {
+    grid-area: plc;
+}
+
+.footerLink {
+    grid-area: fot;
+    background-color: rgb(2, 2, 82);
+}
+
+.bokFooter {
+    display: flex;
+    text-decoration: none;
+    color: white;
+    letter-spacing: 1px;
+    font-size: 30px;
+    text-align: center;
+    justify-content: center;
+    position: relative;
+    top: 27%;
+    
+
+}
+
