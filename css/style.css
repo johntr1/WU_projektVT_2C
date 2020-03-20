@@ -112,6 +112,7 @@ nav {
     border-width: 0px 1px 1px 0px;
     transform: rotate(45deg);
     transition: border-width 150ms ease-in-out;
+   
 
   }
   
@@ -146,7 +147,7 @@ nav {
     "fot fot"
     ;
     grid-template-columns: 80% 20%;
-    grid-template-rows: 10vh 30vh 15vh 35vh 10vh;
+    grid-template-rows: 10vh 30vh 10vh 40vh 10vh;
 
 }
 
@@ -163,6 +164,7 @@ nav {
 
 .gridRubrik {
     grid-area: rub;
+    position: relative;
 }
 
 .subSection {
@@ -180,14 +182,14 @@ nav {
 
 .rubrik {
     background-color: rgb(247, 233, 252);
-    display: flex;
     font-size: 32px;
     color: #0e242d;
-    align-items: center;
-    text-align: center;
-
     font-weight: 700;
     border-bottom: 2px dotted currentColor;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
 }
 
 article {
