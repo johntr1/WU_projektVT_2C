@@ -44,13 +44,23 @@
         <div class="plcdiv plcgrid"></div>
         <h1 class="rubrik bokRubrik">Välj en skrivare som passar dig</h1>
         <section class="blockSection">
-            <a href="bokningsfeedback.html" class="blocks block1"><p class="blockLink">Prusa</p></a>
-            <a href="#" class="blocks block2"><p class="blockLink">Prusa</p></a>
-            <a href="#" class="blocks block3"><p class="blockLink">Prusa</p></a>
-            <a href="#" class="blocks block4"><p class="blockLink">Prusa</p></a>
-            <a href="#" class="blocks block5"><p class="blockLink">Prusa</p></a>
-            <a href="#" class="blocks block6"><p class="blockLink">Prusa</p></a>
+            <button data-modal-target="#modal" class="blocks block1"><p class="blockLink">Prusa</p></button>
+            <button data-modal-target="#modal" class="blocks block2"><p class="blockLink">Prusa</p></button>
+            <button data-modal-target="#modal" class="blocks block3"><p class="blockLink">Prusa</p></button>
+            <button data-modal-target="#modal" class="blocks block4"><p class="blockLink">Prusa</p></button>
+            <button data-modal-target="#modal" class="blocks block5"><p class="blockLink">Prusa</p></button>
+            <button data-modal-target="#modal" class="blocks block6"><p class="blockLink">Prusa</p></button>
         </section>
+
+        <div class="modal" id="modal">
+            <div class="modalHeader">
+                <div class="modalTitle">Example Modal</div>
+                <button data-close-button class="closeButton">&times;</button>
+            </div>         
+            <div class="modalBody">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Itaque qui fugiat dolores nemo quibusdam voluptate odio id? Dolor omnis consequuntur, recusandae porro, similique reprehenderit natus pariatur dolorum reiciendis in cupiditate accusamus laborum asperiores temporibus? Nam non aliquam neque est rerum?     
+            </div>
+        </div>
+        <div id="overlay"></div>
 
         <a href="#gridWrapper2" class="footerLink"><footer class="bokFooter">Gå tillbaks</footer></a>
     </div>
