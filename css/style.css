@@ -58,9 +58,13 @@ nav {
     transform: translateY(100vh);
 }
 
-.gridWrapper {
+.indexBackground {
     background-image: url(https://image.freepik.com/free-vector/mobile-background-with-starry-sky-purple-tones_79603-550.jpg);
     background-size: cover;
+}
+
+.gridWrapper {
+
     display: grid;
     height: 100vh;
     grid-template-areas:
@@ -239,18 +243,16 @@ p {
     margin: 10px;
     box-shadow: 0px 0px 10px 0px ;
     background-color: rgb(4, 4, 153);
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .blockLink {
     display: flex;
     font-size: 20px;
     color: white;
-    font-weight: bold;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-    top: 35%;
-
+    font-weight: bold;   
 }
 
 .block1 {
@@ -300,3 +302,6 @@ p {
 
 }
 
+.feedbackBackground {
+    background-image: url("../img/tumme\ upp.png");
+}
