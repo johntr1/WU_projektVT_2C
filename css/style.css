@@ -20,7 +20,6 @@ nav {
     justify-content: flex-end;
     align-items: center;
     height: 10vh;
-    position: fixed;
     right: 0px;
     background-color: rgb(2, 2, 82);
     width: 100vw;
@@ -29,7 +28,6 @@ nav {
 }
 
 #logo {
-    position: fixed;
     left: 10px;
     
 }
@@ -61,7 +59,7 @@ nav {
 }
 
 .indexBackground {
-    background-image: url(https://image.freepik.com/free-vector/mobile-background-with-starry-sky-purple-tones_79603-550.jpg);
+    background-image: url("https://image.freepik.com/free-vector/mobile-background-with-starry-sky-purple-tones_79603-550.jpg");
     background-size: cover;
 }
 
@@ -69,8 +67,8 @@ nav {
     display: grid;
     height: 100vh;
     grid-template-areas:
-    "nav1 nav1"
-    "sec sec"
+    "nav nav"
+    "hed hed"
     "fot fot";
     grid-template-columns: 80% 20%;
     grid-template-rows: 10vh 80vh 10vh;
@@ -86,23 +84,20 @@ nav {
 }
 
 nav {
-    grid-area: nav1;
+    grid-area: nav;
 }
 
-.mainSection {
-    grid-area: sec;
+#welcome {
+    grid-area: hed;
     font-size: 50px;
     color: white;
     display:flex;
     align-items: center;
     text-align: center;
+    justify-content: center;
 }
 
 
-.mainArticle {
-    grid-area: art;
-    background-color: rgb(247, 233, 252);;
-}
 
 .arrow {
     box-sizing: border-box;
@@ -131,7 +126,7 @@ nav {
     height: 10vh;
 }
 
-.mainFoot {
+#mainFoot {
     grid-area: fot;
 }
 
@@ -157,9 +152,6 @@ nav {
     background-color: rgb(2, 2, 82)
 }
 
-.gridTitle2 {
-    grid-area: hed;
-}
 
 .gridRubrik {
     grid-area: rub;
@@ -174,7 +166,7 @@ nav {
 
 }
 
-.subFoot {
+.arrowFooter {
     grid-area: fot;
 }
 
@@ -571,4 +563,140 @@ input {
     #logo {
         font-size: 25px;
     }
+}
+
+@media screen and (max-width: 1024px) {
+    nav {
+        position: fixed;
+    }
+
+    #logo {
+        position: fixed;
+        left: 10px;
+    }
+
+}
+
+@media screen and (min-width: 800px) {
+    .gridWrapper {
+        display: grid;
+        width: 100vw;
+        height: 100vh;
+        grid-template-areas:
+        "nav"
+        "hed"
+        "sec"
+        ;
+
+        grid-template-rows: 10vh 30vh 60vh;
+        grid-template-columns: none;
+    }
+
+    #welcome {
+        grid-area: hed;
+    }
+
+    .hamburger {
+        visibility: hidden;
+    }
+
+    nav {
+        grid-area: nav;
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .navLinks {
+        flex-direction: row;
+        justify-content: space-around;
+        position: relative;
+        top: 0px;
+        right: 0px;
+        width: 100vw;
+        height: 100%;
+    }
+
+    .arrowFooter{
+        display: none;
+    }
+
+    body {
+        overflow-x: hidden;
+    }
+
+    .plcdiv {
+        display: none;
+    }
+    
+    #todo {
+        margin: 10px;
+        height: 60vh;
+        grid-template-areas: 
+        "rub sub"
+        "art sub"
+        ;
+
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 1fr 1fr;
+        }
+
+
+    #about {
+            margin: 10px;
+            height: 60vh;
+            grid-template-areas: 
+            "sub rub"
+            "sub art"
+            ;
+    
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: 1fr 1fr;
+    }
+
+    #anmal {
+            margin: 10px;
+            height: 60vh;
+            grid-template-areas: 
+            "rub sub"
+            "art sub"
+            ;
+    
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: 1fr 1fr;     
+    }
+
+    .subSection {
+        grid-area: sub;
+    }
+
+    .gridRubrik {
+        grid-area: rub;
+    }
+
+    .subArticle {
+        grid-area: art;
+    }
+
+    .rubrik {
+        font-size: 60px;
+    }
+
+    article p {
+        font-size: 30px;
+    }
+
+
+
+
+    
+    
+
+    
+    
+ 
+
+
+
+
+
 }
