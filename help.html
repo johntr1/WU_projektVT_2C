@@ -3,10 +3,76 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Oxanium&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/hamburgers.css">
     
     <title>Om oss</title>
 </head>
 <body>
-    
+    <nav>
+        <header class="titleText" id="logo">NTI Johanneberg</header>
+        <ul class="navLinks">
+            <li><a href="index.html">Hem</a></li>
+            <li><a href="boka.html">Boka</a></li>
+            <li><a href="anmal.html">Anmäl</a></li>
+            <li><a href="help.html">Hjälp</a></li>
+        </ul>
+
+        <button class="hamburger hamburger--elastic-r" type="button">
+            <span class="hamburger-box">
+                <span class="hamburger-inner"></span>
+            </span>
+        </button>
+    </nav>
+
+        <div class="helpWrapper">
+            <div class="plcdiv" id="plcgrid"></div>
+            <h1 class="rubrik bokRubrik">Hur kan vi hjälpa dig?</h1>
+            <section class="contentSection">
+                <div class="dropdown" id="drop1">
+                    <button class="dropbtn">Vanliga frågor (FAQ)</button>
+                    <div class="dropdownContent">
+                        <a href="#">Hur får man tillgång till Makerspace skrivarna?</a>
+                        <a href="#">Behöver man vara erfaren med att 3D-printa för att delta på Makerspace?</a>
+                        <a href="#">Link3</a>
+                    </div>
+                </div>
+
+                <div class="dropdown" id="drop2">
+                    <button class="dropbtn">Öppettider</button>
+                    <div class="dropdownContent">
+                        <a href="#">Link1</a>
+                        <a href="#">Link2</a>
+                        <a href="#">Link3</a>
+                    </div>
+                </div>
+
+                <div class="dropdown" id="drop3">
+                    <button class="dropbtn">Felanmälningar</button>
+                    <div class="dropdownContent">
+                        <a href="#">Link1</a>
+                        <a href="#">Link2</a>
+                        <a href="#">Link3</a>
+                    </div>
+                </div>
+
+                
+                <div class="dropdown" id="drop4">
+                    <button class="dropbtn">Kontakt</button>
+                    <div class="dropdownContent">
+                        <a href="#">Link1</a>
+                        <a href="#">Link2</a>
+                        <a href="#">Link3</a>
+                    </div>
+                </div>
+            </section>
+
+            <footer id="infoFooter">Om du inte hittar det du letade efter, kan ni kontakta oss via john.tran@elev.ga.ntig.se</footer>
+        </div>
+
+
+
+    <script src="js/script.js"></script>
 </body>
 </html>
