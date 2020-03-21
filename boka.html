@@ -7,15 +7,15 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/hamburgers.css">
     <link href="https://fonts.googleapis.com/css?family=Oxanium&display=swap" rel="stylesheet">
-    <title>Document</title>
+    <title>Boka en skrivare</title>
 </head>
 <body>
     <nav>
-        <header class="titleText gridTitle1">NTI Johanneberg</header>
+        <header class="titleText" id="logo">NTI Johanneberg</header>
         <ul class="navLinks">
             <li><a href="index.html">Hem</a></li>
-            <li><a href="#">Boka</a></li>
-            <li><a href="#">Boka</a></li>
+            <li><a href="boka.html">Boka</a></li>
+            <li><a href="anmal.html">Registrera</a></li>
             <li><a href="#">Boka</a></li>
         </ul>
 
@@ -26,10 +26,10 @@
         </button>
     </nav>
 
-    <div id="gridWrapper2">
+    <div class="contentWrapper" id="mainBok">
         <div class="plcdiv"></div>
         <header class="gridRubrik "><h1 class="rubrik">Boka en av våra skrivare på Makerspace!</h1></header>
-        <section class="subSection"><img class="makerImg" src="img/bokningsbild.jpg" alt="Makerspace"></section>
+        <section class="subSection"><img class="contentImg" src="img/bokningsbild.jpg" alt="Makerspace"></section>
         <article class="subArticle"><p> Vi har en stor variation av skrivare i olika storlekar som kan göra din imagination till verklighet. Skrivare som är i toppskick för att kunna möta dina förväntningar finns i stor mängd här.</p></article>
         <footer class="subFoot">
              <div class="container">
@@ -41,7 +41,7 @@
     </div>
 
     <div id="bokWrapper">
-        <div class="plcdiv plcgrid"></div>
+        <div class="plcdiv" id="plcgrid"></div>
         <h1 class="rubrik bokRubrik">Välj en skrivare som passar dig</h1>
         <section class="blockSection">
             <button data-modal-target="#modal" class="blocks block1"><p class="blockLink">Prusa</p></button>
@@ -51,7 +51,7 @@
             <button data-modal-target="#modal" class="blocks block5"><p class="blockLink">Prusa</p></button>
             <button data-modal-target="#modal" class="blocks block6"><p class="blockLink">Prusa</p></button>
         </section>
-        <a href="#gridWrapper2" class="footerLink"><footer class="bokFooter">Gå tillbaks</footer></a>
+        <a href="#mainBok" class="footerLink"><footer class="footerButton">Gå tillbaks</footer></a>
     </div>
 
     <div class="modal" id="modal">
