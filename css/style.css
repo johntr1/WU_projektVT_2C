@@ -540,7 +540,7 @@ input {
         display: grid;
         grid-template-areas:
         "div"
-        "sec"
+        "img"
         "rub"
         "art"
         "fot"
@@ -559,7 +559,7 @@ input {
         width: 100vw;
         grid-template-areas:
         "div"
-        "sec"
+        "img"
         "rub"
         "art"
         "fot"
