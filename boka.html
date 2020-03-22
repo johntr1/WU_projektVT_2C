@@ -10,13 +10,13 @@
     <title>Boka en skrivare</title>
 </head>
 <body>
-    <nav>
+    <nav id="nav">
         <header class="titleText" id="logo">NTI Johanneberg</header>
         <ul class="navLinks">
             <li><a href="index.html">Hem</a></li>
             <li><a href="boka.html">Boka</a></li>
-            <li><a href="anmal.html">Registrera</a></li>
-            <li><a href="#">Boka</a></li>
+            <li><a href="registrera.html.html">Registrera</a></li>
+            <li><a href="help.html">Hjälp</a></li>
         </ul>
 
         <button class="hamburger hamburger--elastic-r" type="button">
@@ -29,7 +29,7 @@
     <div class="contentWrapper left" id="mainBok">
         <aside class="aside" id="asi1"></aside>
         <aside class="aside" id="asi2"> </aside>
-        <div class="plcdiv"></div>
+        <div class="top"></div>
         <h1 class="rubrik gridRubrik ">Boka en av våra skrivare på Makerspace!</h1>
         <section class="subSection">
             <img class="contentImg" id="printer" src="img/bokningsbild.jpg" alt="3D-printer">
@@ -50,17 +50,17 @@
     </div>
 
     <div class="blockWrapper" id=bokPage>
-        <div class="plcdiv" id="plcgrid"></div>
+        <div class="top" id="plcgrid"></div>
         <h1 class="rubrik bokRubrik">Välj en skrivare som passar dig</h1>
         <section class="blockSection">
-            <button data-modal-target="#modal" class="blocks block1"><p class="blockLink">Prusa</p></button>
-            <button data-modal-target="#modal" class="blocks block2"><p class="blockLink">Prusa</p></button>
-            <button data-modal-target="#modal" class="blocks block3"><p class="blockLink">Prusa</p></button>
-            <button data-modal-target="#modal" class="blocks block4"><p class="blockLink">Prusa</p></button>
-            <button data-modal-target="#modal" class="blocks block5"><p class="blockLink">Prusa</p></button>
-            <button data-modal-target="#modal" class="blocks block6"><p class="blockLink">Prusa</p></button>
+            <button data-modal-target="#modal" class="blocks block1"><p class="blockLink">Prusa1</p></button>
+            <button data-modal-target="#modal" class="blocks block2"><p class="blockLink">Prusa2</p></button>
+            <button data-modal-target="#modal" class="blocks block3"><p class="blockLink">Prusa3</p></button>
+            <button data-modal-target="#modal" class="blocks block4"><p class="blockLink">Prusa4</p></button>
+            <button data-modal-target="#modal" class="blocks block5"><p class="blockLink">Prusa5</p></button>
+            <button data-modal-target="#modal" class="blocks block6"><p class="blockLink">Prusa6</p></button>
         </section>
-        <a href="#mainBok" class="footerLink"><footer class="footerButton">Gå tillbaks</footer></a>
+        <a href="#nav" class="footerLink"><footer class="footerButton">Gå tillbaks</footer></a>
     </div>
 
     <div class="modal" id="modal">
