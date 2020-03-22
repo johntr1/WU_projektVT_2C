@@ -145,6 +145,10 @@ nav {
 
 }
 
+.aside {
+    display: none;
+}
+
 .plcdiv {
     grid-area: div;
     height:10vh;
@@ -585,15 +589,15 @@ input {
         grid-template-areas:
         "nav"
         "hed"
-        "sec"
         ;
 
-        grid-template-rows: 10vh 30vh 60vh;
+        grid-template-rows: 10vh 90vh;
         grid-template-columns: none;
     }
 
     #welcome {
         grid-area: hed;
+        font-size: 150px;
     }
 
     .hamburger {
@@ -616,54 +620,86 @@ input {
         height: 100%;
     }
 
-    .arrowFooter{
-        display: none;
-    }
+
 
     body {
         overflow-x: hidden;
     }
 
-    .plcdiv {
-        display: none;
-    }
+
     
-    #todo {
-        margin: 10px;
-        height: 60vh;
+    .right {
+        margin: 0px;
+        height: 100vh;
         grid-template-areas: 
-        "rub sub"
-        "art sub"
+        "hed hed hed hed"
+        "asi1 rub sub asi2"
+        "asi1 art sub asi2"
+        "fot fot fot fot"
         ;
 
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: 1fr 1fr;
+        grid-template-columns: 15vw 35vw 35vw 15vw;
+        grid-template-rows: 20vh 30vh 30vh 20vh;
+        }
+
+    .plcdiv {
+        grid-area: hed;
+        height: 100%;
+        background-color: rgb(2, 2, 82);
+    }
+
+    .arrow{
+        display: none;
+    }
+
+    .container {
+        height: 100%;
+        margin-top: 20px;
+    }
+
+    .aside {
+        display: block;
+        background-color:white;
+    }
+
+    #asi1{
+        grid-area: asi1;
+    }
+
+    #asi2 {
+        grid-area: asi2;
+    }
+
+    #makerspaceImg {
+        margin-top: 10px;
+    }
+
+    #printer {
+        margin-top: 10px;
+    }
+
+
+
+
+
+
+
+    .left {
+        margin: 0px;
+        height: 100vh;
+        grid-template-areas: 
+        "hed hed hed hed"
+        "asi1 sub rub asi2"
+        "asi1 sub art asi2"
+        "fot fot fot fot"
+        ;
+
+        grid-template-columns: 15vw 35vw 35vw 15vw;
+        grid-template-rows: 20vh 30vh 30vh 20vh;
         }
 
 
-    #about {
-            margin: 10px;
-            height: 60vh;
-            grid-template-areas: 
-            "sub rub"
-            "sub art"
-            ;
-    
-            grid-template-columns: repeat(2, 1fr);
-            grid-template-rows: 1fr 1fr;
-    }
 
-    #anmal {
-            margin: 10px;
-            height: 60vh;
-            grid-template-areas: 
-            "rub sub"
-            "art sub"
-            ;
-    
-            grid-template-columns: repeat(2, 1fr);
-            grid-template-rows: 1fr 1fr;     
-    }
 
     .subSection {
         grid-area: sub;
@@ -679,24 +715,27 @@ input {
 
     .rubrik {
         font-size: 60px;
+        margin: 0px 50px 0px 50px;
+    }
+
+    #logo {
+        margin-left: 30px;
     }
 
     article p {
-        font-size: 30px;
+        margin: 10px 50px 0px 50px;
+    }
+
+    #mainBok {
+        grid-template-rows: {};
     }
 
 
+}
 
-
-    
-    
-
-    
-    
- 
-
-
-
-
+@media screen and (min-width: 2560px) {
+    article p {
+        font-size: 30px;
+    }
 
 }
