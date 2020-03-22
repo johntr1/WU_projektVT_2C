@@ -158,6 +158,10 @@ nav {
     background-color: rgb(2, 2, 82)
 }
 
+.subArticle {
+    grid-area: art;
+}
+
 
 .gridRubrik {
     grid-area: rub;
