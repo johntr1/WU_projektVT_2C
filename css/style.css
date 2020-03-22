@@ -59,7 +59,7 @@ nav {
 }
 
 .indexBackground {
-    background-image: url("https://image.freepik.com/free-vector/mobile-background-with-starry-sky-purple-tones_79603-550.jpg");
+    background-image: url("../img/spacebakgrund.jpg");
     background-size: cover;
 }
 
@@ -136,7 +136,7 @@ nav {
     width: 100vw;
     grid-template-areas:
     "div"
-    "sec"
+    "img"
     "rub"
     "art"
     "fot"
@@ -163,14 +163,10 @@ nav {
     grid-area: rub;
 }
 
-.subSection {
-    grid-area: sec;
+.boxImg {
+    grid-area: img;
 }
 
-.subArticle {
-    grid-area: art;
-
-}
 
 .arrowFooter {
     grid-area: fot;
@@ -249,7 +245,7 @@ article p{
     justify-content: center;
 }
 
-.blockLink {
+.blockText {
     display: flex;
     font-size: 20px;
     color: white;
@@ -371,7 +367,7 @@ article p{
 
 }
 
-.anmalWrapper {
+.inputWrapper {
     display: grid;
     width: 100vw;
     height: 100vh;
@@ -380,7 +376,7 @@ article p{
     "sec"
     "fot"
     ;
-    grid-template-rows: 10vh 70vh 20vh
+    grid-template-rows: 10% 70% 20%
     
 }
 
@@ -405,6 +401,12 @@ article p{
     align-items: center;
 }
 
+.footPlacer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .inputs {
     grid-area: inp;
     display:flex;
@@ -418,6 +420,10 @@ input {
     grid-area: inp;
     width: 300px;
     height: 45px;
+}
+
+#orsak {
+    height: 100px;
 }
 
 #infoRegister {
@@ -519,6 +525,8 @@ input {
     align-items: center;
     justify-content: center;
 }
+
+
 
 @media screen and (max-height: 700px) {
     .contentWrapper {
@@ -633,8 +641,8 @@ input {
         height: 100vh;
         grid-template-areas: 
         "hed hed hed hed"
-        "asi1 rub sub asi2"
-        "asi1 art sub asi2"
+        "asi1 rub img asi2"
+        "asi1 art img asi2"
         "fot fot fot fot"
         ;
 
@@ -695,8 +703,8 @@ input {
         width: 100vw;
         grid-template-areas: 
         "hed hed hed hed"
-        "asi1 sub rub asi2"
-        "asi1 sub art asi2"
+        "asi1 img rub asi2"
+        "asi1 img art asi2"
         "fot fot fot fot"
         ;
 
@@ -707,8 +715,8 @@ input {
 
 
 
-    .subSection {
-        grid-area: sub;
+    .boxImg {
+        grid-area: img;
     }
 
     .gridRubrik {
@@ -742,6 +750,10 @@ input {
         display:flex;
         justify-content: space-evenly;
         align-items: center;
+    }
+
+    .indexBackground {
+        background-image: url("../img/non-copyrighted\ space\ bakgrund.jpg");
     }
 
 
@@ -778,11 +790,27 @@ input {
 } 
 
 @media screen and (max-width: 500px) {
-    article p {
-        font-size: 14px;
-    }
 
     .rubrik {
         font-size: 30px;
     }
+}
+
+@media screen and (max-width: 375px) {
+    .inputWrapper {
+        height: 150vh;
+    }
+
+    .contentWrapper {
+        grid-template-rows: 10vh 30vh 10vh 40vh 10vh;
+    }
+
+    .rubrik {
+        font-size: 25px;
+    }
+
+    article p {
+        font-size: 15px;
+    }
+
 }

@@ -3,9 +3,54 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Felanmälan</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/hamburgers.css">
+    <link href="https://fonts.googleapis.com/css?family=Oxanium&display=swap" rel="stylesheet">
 </head>
 <body>
+    <div class="inputWrapper">
+        <nav>
+            <header class="titleText" id="logo">NTI Johanneberg</header>
+            <ul class="navLinks">
+                <li><a href="index.html">Hem</a></li>
+                <li><a href="boka.html">Boka</a></li>
+                <li><a href="registrera.html">Registrera</a></li>
+                <li><a href="help.html">Hjälp</a></li>
+            </ul>
     
+            <button class="hamburger hamburger--elastic-r" type="button">
+                <span class="hamburger-box">
+                    <span class="hamburger-inner"></span>
+                </span>
+            </button>
+        </nav>
+
+        <section class="register">
+            <h1 class="rubrik">Har du hittat något ur funktion på Makerspace?</h1>
+            <h1 id="infoRegister">Fyll i frågorna för att kunna göra en felanmälan</h1>
+            <div class="inputs" id="felInputs">
+                <form action="index.html">
+                    <label for="fname">
+                        <input type="text" id="printer" name="printer" placeholder="Skriv vilken skrivare som har fått problem"><br><br>
+                    </label>
+                    <label for="namn">
+                        <input type="text" id="namn" name="namn" placeholder="Skriv ditt namn och efternamn"><br><br>
+                    </label>
+                    <label for="klass">
+                        <input type="text" id="klass" name="klass" placeholder="Skirv vilken klass du går i"><br><br>
+                    </label>
+                    <label for="orsak">
+                        <textarea id="orsak" name="orsak" placeholder="Skriv vad som har hänt" rows="5" cols="32"></textarea><br><br>
+                    </label>
+                    <input type="submit">
+                </form>
+            </div>
+        </section>
+
+        <footer id="infoFooter">Genom att registrera dig godkänner du våra användarvillkor, vår datapolicy och vår policy för cookies. Läs mer om hur vi samlar in, använder och delar dina uppgiffter i vår datapolicy och hur vi använder cookies och liknande teknologi i vår policy för cookies.</footer>
+    </div>
+
+    <script src="js/script.js"></script>
 </body>
 </html>
